@@ -8,7 +8,7 @@ public class Player1Movement : MonoBehaviour
     private float horizontal;
     public float speed = 8f;
     public float jumpingPower = 16f;
-   [SerializeField] private bool isFacingRight = true;
+    [SerializeField] private bool isFacingRight = true;
 
     [SerializeField] private Rigidbody2D rb;
     public Transform groundCheck;
@@ -18,6 +18,8 @@ public class Player1Movement : MonoBehaviour
     public KeyCode leftKey = KeyCode.A;
     public KeyCode rightKey = KeyCode.D;
     public KeyCode jumpKey = KeyCode.W;
+
+    private bool isGrounded;
 
     private void Update()
     {
@@ -32,7 +34,8 @@ public class Player1Movement : MonoBehaviour
             horizontal = 1f;
         }
 
-        if (Input.GetKeyDown(jumpKey) && IsGrounded())
+        // Allow jumping only if grounded
+        if (Input.GetKeyDown(jumpKey) && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
@@ -50,11 +53,6 @@ public class Player1Movement : MonoBehaviour
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
 
-    private bool IsGrounded()
-    {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-    }
-
     private void Flip()
     {
         if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
@@ -64,5 +62,26 @@ public class Player1Movement : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Player") || IsGroundedLayer(collision.gameObject.layer))
+        {
+            isGrounded = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Player") || IsGroundedLayer(collision.gameObject.layer))
+        {
+            isGrounded = false;
+        }
+    }
+
+    private bool IsGroundedLayer(int layer)
+    {
+        return (groundLayer & (1 << layer)) != 0;
     }
 }
