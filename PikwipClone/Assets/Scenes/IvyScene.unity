@@ -394,7 +394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attenuationObject: {fileID: 0}
+  attenuationObject: {fileID: 1334796798}
 --- !u!198 &713061805 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 5179522970782001619, guid: 0f3231bf3d33dc54e8ae739a923e13f1, type: 3}
