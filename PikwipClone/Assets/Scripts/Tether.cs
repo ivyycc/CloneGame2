@@ -10,6 +10,7 @@ public class Tether : MonoBehaviour
     public float tetherForce = 10f;
 
     private LineRenderer lineRenderer;
+    public int sortingOrder = 11;
 
     private void Start()
     {
@@ -21,6 +22,7 @@ public class Tether : MonoBehaviour
         lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
         lineRenderer.startColor = Color.white;
         lineRenderer.endColor = Color.white;
+         lineRenderer.sortingOrder = sortingOrder;
     }
 
     private void FixedUpdate()
