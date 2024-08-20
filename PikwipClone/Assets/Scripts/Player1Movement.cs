@@ -13,14 +13,19 @@ public class Player1Movement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     public Transform groundCheck;
     public LayerMask groundLayer;
+    private Animator animator;
+    [SerializeField] ParticleSystem snow;
 
     [Header("Controls")]
     public KeyCode leftKey = KeyCode.A;
     public KeyCode rightKey = KeyCode.D;
     public KeyCode jumpKey = KeyCode.W;
 
-    public bool isGrounded;
-
+    private bool isGrounded;
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     private void Update()
     {
         horizontal = 0f;
@@ -28,10 +33,18 @@ public class Player1Movement : MonoBehaviour
         if (Input.GetKey(leftKey))
         {
             horizontal = -1f;
+            animator.SetBool("isRunning", true);
+            snow.Play();
         }
         else if (Input.GetKey(rightKey))
         {
             horizontal = 1f;
+            animator.SetBool("isRunning", true);
+            snow.Play();
+        }
+        else
+        {
+            animator.SetBool("isRunning", false);
         }
 
         // Allow jumping only if grounded
