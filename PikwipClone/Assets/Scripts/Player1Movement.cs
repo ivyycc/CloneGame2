@@ -19,7 +19,7 @@ public class Player1Movement : MonoBehaviour
     public KeyCode rightKey = KeyCode.D;
     public KeyCode jumpKey = KeyCode.W;
 
-    private bool isGrounded;
+    public bool isGrounded;
 
     private void Update()
     {
