@@ -11,7 +11,6 @@ public class Player1Movement : MonoBehaviour
     [SerializeField] private bool isFacingRight = true;
 
     [SerializeField] private Rigidbody2D rb;
-    public Transform groundCheck;
     public LayerMask groundLayer;
 
     [Header("Controls")]
@@ -20,6 +19,15 @@ public class Player1Movement : MonoBehaviour
     public KeyCode jumpKey = KeyCode.W;
 
     public bool isGrounded;
+
+    public Rigidbody2D tetheredPlayer;
+    public float tetherDistance;
+
+    public GroundCheck GroundCheck; // Change the type to GroundCheck
+
+
+
+
 
     private void Update()
     {
@@ -35,7 +43,7 @@ public class Player1Movement : MonoBehaviour
         }
 
         // Allow jumping only if grounded
-        if (Input.GetKeyDown(jumpKey) && isGrounded)
+        if (Input.GetKeyDown(jumpKey) && GroundCheck.IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
@@ -50,7 +58,20 @@ public class Player1Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
+
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+
+        //float currentDistance = Vector2.Distance(rb.position, tetheredPlayer.position);
+
+        //// Modified ground check logic considering tether distance
+        //if (IsGrounded() && currentDistance <= tetherDistance)
+        //{
+        //    isGrounded = true;
+        //}
+        //else if (currentDistance > tetherDistance)
+        //{
+        //    isGrounded = IsGrounded();
+        //}
     }
 
     private void Flip()
@@ -64,24 +85,30 @@ public class Player1Movement : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Player") || IsGroundedLayer(collision.gameObject.layer))
-        {
-            isGrounded = true;
-        }
-    }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Player") || IsGroundedLayer(collision.gameObject.layer))
-        {
-            isGrounded = false;
-        }
-    }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.collider.CompareTag("Player") || IsGroundedLayer(collision.gameObject.layer))
+    //    {
+    //        isGrounded = true;
+    //    }
+    //}
 
-    private bool IsGroundedLayer(int layer)
-    {
-        return (groundLayer & (1 << layer)) != 0;
-    }
+    //private void OnCollisionExit2D(Collision2D collision)
+    //{
+    //    if (collision.collider.CompareTag("Player") || IsGroundedLayer(collision.gameObject.layer))
+    //    {
+    //        isGrounded = false;
+    //    }
+    //}
+
+    //public bool IsGroundedLayer(int layer)
+    //{
+    //    return (groundLayer & (1 << layer)) != 0;
+    //}
+
+    //private bool IsGrounded()
+    //{
+    //    return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+    //}
 }
