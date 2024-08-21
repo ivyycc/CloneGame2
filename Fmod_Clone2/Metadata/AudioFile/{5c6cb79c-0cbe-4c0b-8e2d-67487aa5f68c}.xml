@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{5c6cb79c-0cbe-4c0b-8e2d-67487aa5f68c}">
+		<property name="assetPath">
+			<value>slime-splat-1-219248.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.64800000000000002</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3fd304da-395f-43a2-94e2-a1ab6cfc6b94}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a80efb80-9f03-467f-89cb-85184ca06863}">
+		<property name="assetPath">
+			<value>wind__artic__cold-6195.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>24</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>59.064</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3fd304da-395f-43a2-94e2-a1ab6cfc6b94}</destination>
+		</relationship>
+	</object>
+</objects>
