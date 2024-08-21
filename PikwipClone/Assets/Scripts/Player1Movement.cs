@@ -21,7 +21,11 @@ public class Player1Movement : MonoBehaviour
     public KeyCode rightKey = KeyCode.D;
     public KeyCode jumpKey = KeyCode.W;
 
-    private bool isGrounded;
+    public bool isGrounded;
+    public Rigidbody2D tetheredPlayer;
+    public float tetherDistance;
+
+    public GroundCheck GroundCheck; // Change the type to GroundCheck
     private void Start()
     {
         animator = GetComponent<Animator>();
