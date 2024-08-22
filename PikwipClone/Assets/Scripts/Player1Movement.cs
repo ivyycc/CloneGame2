@@ -26,6 +26,9 @@ public class Player1Movement : MonoBehaviour
     public float tetherDistance;
 
     public GroundCheck GroundCheck; // Change the type to GroundCheck
+
+
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -36,12 +39,14 @@ public class Player1Movement : MonoBehaviour
 
         if (Input.GetKey(leftKey))
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.playerWalk, this.transform.position);
             horizontal = -1f;
             animator.SetBool("isRunning", true);
             snow.Play();
         }
         else if (Input.GetKey(rightKey))
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.playerWalk, this.transform.position);
             horizontal = 1f;
             animator.SetBool("isRunning", true);
             snow.Play();
@@ -54,6 +59,7 @@ public class Player1Movement : MonoBehaviour
         // Allow jumping only if grounded
         if (Input.GetKeyDown(jumpKey) && GroundCheck.IsGrounded())
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.playerJump, this.transform.position);
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
 
@@ -80,6 +86,8 @@ public class Player1Movement : MonoBehaviour
             transform.localScale = localScale;
         }
     }
+
+   
 
     /*private void OnCollisionEnter2D(Collision2D collision)
     {

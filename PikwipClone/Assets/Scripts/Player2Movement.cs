@@ -35,12 +35,14 @@ public class Player2Movement : MonoBehaviour
 
         if (Input.GetKey(leftKey))
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.playerWalk, this.transform.position);
             horizontal = -1f;
             animator.SetBool("isRunning", true);
             snow.Play();
         }
         else if (Input.GetKey(rightKey))
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.playerWalk, this.transform.position);
             horizontal = 1f;
             animator.SetBool("isRunning", true);
             snow.Play();
@@ -53,6 +55,7 @@ public class Player2Movement : MonoBehaviour
         // Allow jumping only if grounded
         if (Input.GetKeyDown(jumpKey) && GroundCheck.IsGrounded())
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.playerJump, this.transform.position);
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
 

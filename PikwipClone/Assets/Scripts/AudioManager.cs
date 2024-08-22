@@ -25,17 +25,22 @@ public class AudioManager : MonoBehaviour
 
     public void Awake()
     {
-        /*if (instance != null && instance != this)
+       /* if (instance != null && instance != this)
         {
             Debug.LogError("Found more than one Audio Manager in the scene");
-            //Destroy(gameObject);
-            //return;
+            Destroy(gameObject);
+            return;
+        }*/
+        if (instance != null)
+        {
+            Debug.LogError("Found more than one Audio Manager in the scene");
         }
 
+        
         instance = this;
-       // DontDestroyOnLoad(gameObject);*/
+       // DontDestroyOnLoad(gameObject);
 
-        if (instance == null)
+       /* if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
@@ -44,7 +49,7 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
             return;
-        }
+        }*/
 
         eventInst = new List<EventInstance>();
 
@@ -75,6 +80,7 @@ public class AudioManager : MonoBehaviour
     public void PlayOneShot(EventReference sound, Vector3 worldpos)
     {
         FMODUnity.RuntimeManager.PlayOneShot(sound, worldpos);
+        
     }
 
     public EventInstance CreateEventInstance(EventReference eR)
