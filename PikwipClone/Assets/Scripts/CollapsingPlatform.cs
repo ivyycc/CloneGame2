@@ -7,14 +7,14 @@ public class CollapsingPlatform : MonoBehaviour
 
     private bool isCollapsing = false;
     public bool Restart = false;
-   
+
     [SerializeField] private Transform Checkpoint;
     // private Animator animator;
 
-    [SerializeField] private CheckFalling CF;
+    [SerializeField] private CheckFall CF;
     void Start()
     {
-      //  animator = GetComponent<Animator>();
+        //  animator = GetComponent<Animator>();
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -22,7 +22,7 @@ public class CollapsingPlatform : MonoBehaviour
         if (collision.gameObject.CompareTag("Player") && !isCollapsing) // Check if the player stepped on the platform
         {
             StartCoroutine(CollapsePlatform(collision));
-            
+
         }
     }
 
@@ -31,10 +31,10 @@ public class CollapsingPlatform : MonoBehaviour
         isCollapsing = true; // Prevent multiple triggers
         //animator.SetTrigger("Collapse"); // Trigger the collapse animation
         yield return new WaitForSeconds(collapseDelay);
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.FallingPlatform, this.transform.position);
+        //AudioManager.instance.PlayOneShot(FMODEvents.instance.FallingPlatform, this.transform.position);
         gameObject.SetActive(false); // Disable the platform
         Restart = true;
-        if(CF.Fallen == true)
+        if (CF.Fallen == true)
         {
             Respawn(collision);
         }
