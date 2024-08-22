@@ -111,6 +111,16 @@ public class AudioManager : MonoBehaviour
         Debug.Log("Wind STARTED");
     }
 
+    public void InitializeStartMusic(EventReference startMusicRef)
+    {
+        //WindEventInstance = RuntimeManager.CreateInstance(WindEventRef);
+        FMOD.Studio.EventInstance GameMusicInstance = RuntimeManager.CreateInstance(startMusicRef);
+        //musicEventInstance = CreateEventInstance(musicEventReference);event:/Music/BackgroundMusic
+        GameMusicInstance.start();
+        Debug.Log("Wind STARTED");
+    }
+
+
     public void SetWindParam(string name, float val)
     {
         WindEventInstance.setParameterByName(name, val);

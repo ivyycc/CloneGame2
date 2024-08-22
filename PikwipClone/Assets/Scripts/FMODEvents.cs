@@ -7,7 +7,7 @@ public class FMODEvents : MonoBehaviour
 {
 
     [field: Header("UI SFX")]
-    [field: SerializeField] public EventReference select { get; private set; }
+    [field: SerializeField] public EventReference startScene{ get; private set; }
     [field: SerializeField] public EventReference play { get; private set; }
     [field: SerializeField] public EventReference quit { get; private set; }
 
