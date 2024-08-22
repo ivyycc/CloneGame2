@@ -21,7 +21,9 @@ public class AudioManager : MonoBehaviour
 
 
     private EventInstance musicEventInstance;
+    private EventInstance WindEventInstance;
     public static AudioManager instance { get; private set; }
+
 
     public void Awake()
     {
@@ -65,6 +67,7 @@ public class AudioManager : MonoBehaviour
     public void Start()
     {
         InitializeMusic(FMODEvents.instance.Music);
+        InitializeWind(FMODEvents.instance.Snowstorm);
 
     }
 
@@ -99,6 +102,20 @@ public class AudioManager : MonoBehaviour
         Debug.Log("MUSIC STARTED");
     }
 
+    private void InitializeWind(EventReference WindEventRef)
+    {
+        WindEventInstance = RuntimeManager.CreateInstance(WindEventRef);
+        //FMOD.Studio.EventInstance WindEventInstance = RuntimeManager.CreateInstance(WindEventRef);
+        //musicEventInstance = CreateEventInstance(musicEventReference);event:/Music/BackgroundMusic
+        WindEventInstance.start();
+        Debug.Log("Wind STARTED");
+    }
+
+    public void SetWindParam(string name, float val)
+    {
+        WindEventInstance.setParameterByName(name, val);
+        Debug.Log($"SetWindParam called with {name}: {val}");
+    }
 
     public void CleanUp()
     {

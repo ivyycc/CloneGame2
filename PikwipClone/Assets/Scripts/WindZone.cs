@@ -5,15 +5,21 @@ using UnityEngine;
 public class WindZone : MonoBehaviour
 {
     public Vector2 windForce = new Vector2(-5f, 0f); // Adjust the force to your liking
+    [SerializeField]private string paramName;
+    [SerializeField]private float paramVal;
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
+            AudioManager.instance.SetWindParam(paramName, paramVal);
+            Debug.Log("entered wind zone");
             Rigidbody2D rb = collision.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
                 rb.AddForce(windForce, ForceMode2D.Force);
+
             }
         }
     }
@@ -26,7 +32,7 @@ public class WindZone : MonoBehaviour
             if (rb != null)
             {
                 rb.AddForce(windForce, ForceMode2D.Force);
-                Debug.Log("Wind is blowing");
+               // Debug.Log("Wind is blowing");
             }
         }
     }

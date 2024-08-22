@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638599202749959249
+  lastModified: 638599654105184734
   FileSizes:
   - Name: Desktop
-    Value: 410752
+    Value: 411808
   Exists: 1
 --- !u!114 &-8615082283910890223
 MonoBehaviour:
@@ -35,7 +35,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638599202749844343
+  lastModified: 638599629994704238
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -75,7 +75,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Test.bank
   Name: Test
   StudioPath: bank:/Test
-  lastModified: 638599202750115157
+  lastModified: 638599630019536020
   FileSizes:
   - Name: Desktop
     Value: 1748448
@@ -95,10 +95,10 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638599202749853841
+  lastModified: 638599629994724049
   FileSizes:
   - Name: Desktop
-    Value: 1218
+    Value: 1274
   Exists: 1
 --- !u!114 &-4949649195556354971
 MonoBehaviour:
@@ -169,7 +169,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 638599202750179414
+  lastModified: 638599630026693256
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -209,7 +209,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638599202749909241
+  lastModified: 638599630026587976
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -229,7 +229,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638599202749794374
+  lastModified: 638599630026496224
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -267,7 +267,7 @@ MonoBehaviour:
   - {fileID: -8615082283910890223}
   StringsBanks:
   - {fileID: -5946530378459101953}
-  cacheTime: 638599202750179414
+  cacheTime: 638599654105184734
   cacheVersion: 131619
 --- !u!114 &558926839186932275
 MonoBehaviour:
@@ -291,11 +291,12 @@ MonoBehaviour:
   - {fileID: -8908766536056549860}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
-  Parameters: []
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 6366473903644630484}
   MinDistance: 1
   MaxDistance: 20
-  Length: 36161
+  Length: 20000
 --- !u!114 &1905458102276330395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,6 +378,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6366473903644630484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SnowStorm/wind_intensity
+  m_EditorClassIdentifier: 
+  Name: wind_intensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 992625386
+    data2: 2821931523
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &6381264064316993278
 MonoBehaviour:
   m_ObjectHideFlags: 0
