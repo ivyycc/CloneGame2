@@ -65,7 +65,10 @@ public class CollapsingPlatform : MonoBehaviour
 
 }
 
-/*using UnityEngine;
+/*
+ * FOR ADDING ANIMATION!
+ * 
+ * using UnityEngine;
 using System.Collections;
 
 public class FallingPlatform : MonoBehaviour

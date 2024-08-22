@@ -5,6 +5,8 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    /*THIS SCRIPT IS NOT BEING USED */
     void Start()
     {
         

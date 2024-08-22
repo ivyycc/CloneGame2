@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638599176180640509
+  lastModified: 638599202749959249
   FileSizes:
   - Name: Desktop
     Value: 410752
@@ -35,7 +35,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638598622810139278
+  lastModified: 638599202749844343
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -75,7 +75,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Test.bank
   Name: Test
   StudioPath: bank:/Test
-  lastModified: 638599160323290799
+  lastModified: 638599202750115157
   FileSizes:
   - Name: Desktop
     Value: 1748448
@@ -95,7 +95,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638598622810169354
+  lastModified: 638599202749853841
   FileSizes:
   - Name: Desktop
     Value: 1218
@@ -169,7 +169,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 638598551584306985
+  lastModified: 638599202750179414
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -209,7 +209,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638598551584251641
+  lastModified: 638599202749909241
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -229,7 +229,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638598551584182947
+  lastModified: 638599202749794374
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -267,7 +267,7 @@ MonoBehaviour:
   - {fileID: -8615082283910890223}
   StringsBanks:
   - {fileID: -5946530378459101953}
-  cacheTime: 638599176180640509
+  cacheTime: 638599202750179414
   cacheVersion: 131619
 --- !u!114 &558926839186932275
 MonoBehaviour:
