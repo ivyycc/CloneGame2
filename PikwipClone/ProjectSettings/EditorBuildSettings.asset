@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/IvyScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/DanielScene.unity
+    guid: 96d1ad0c6b1dc8d4b863c3445f942d49
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 4894cca1c5a28db4a8ba174a8e42a29b
   - enabled: 1
     path: Assets/Scenes/Aaminah's.unity
     guid: 12e845dff7008d24285adc8c372f918a
