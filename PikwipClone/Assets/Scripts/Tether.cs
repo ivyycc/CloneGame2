@@ -12,6 +12,10 @@ public class Tether : MonoBehaviour
     private LineRenderer lineRenderer;
     public int sortingOrder = 11;
 
+    public float smoothingFactor = 0.1f;
+    private Vector2 player1Velocity;
+    private Vector2 player2Velocity;
+
     private void Start()
     {
         // Set up the LineRenderer component
@@ -33,9 +37,14 @@ public class Tether : MonoBehaviour
         if (currentDistance > tetherDistance)
         {
             Vector2 forceDirection = tetherVector.normalized;
-            Vector2 force = forceDirection * tetherForce * (currentDistance - tetherDistance);
-            player1.AddForce(force);
-            player2.AddForce(-force);
+            Vector2 targetForce = forceDirection * tetherForce * (currentDistance - tetherDistance);
+
+            // Gradually apply the forces using Mathf.Lerp for smoothness
+            player1Velocity = Vector2.Lerp(player1Velocity, targetForce, smoothingFactor);
+            player2Velocity = Vector2.Lerp(player2Velocity, -targetForce, smoothingFactor);
+
+            player1.AddForce(player1Velocity);
+            player2.AddForce(player2Velocity);
         }
 
         // Update the LineRenderer positions
