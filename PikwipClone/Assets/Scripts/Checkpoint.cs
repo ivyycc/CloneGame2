@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
 {
+
+    public static Vector3 lastCheckpointPos;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +21,11 @@ public class Checkpoint : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
-            Debug.Log("checkpoint hit");
-            //check if died to respwan at checkpoint : collision.transform.position = this.transform.position; //respawn player at checkpoint
+            // Update the last checkpoint position to this checkpoint's position
+            lastCheckpointPos = transform.position;
+            Debug.Log("Checkpoint reached at position: " + lastCheckpointPos);
         }
     }
 
