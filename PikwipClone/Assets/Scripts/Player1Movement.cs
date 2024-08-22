@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditorInternal;
+//using UnityEditorInternal;
 using UnityEngine;
 
 public class Player1Movement : MonoBehaviour
@@ -11,7 +11,7 @@ public class Player1Movement : MonoBehaviour
     [SerializeField] private bool isFacingRight = true;
 
     [SerializeField] private Rigidbody2D rb;
-    public Transform groundCheck;
+   // public Transform groundCheck;
     public LayerMask groundLayer;
     private Animator animator;
     [SerializeField] ParticleSystem snow;
@@ -21,7 +21,7 @@ public class Player1Movement : MonoBehaviour
     public KeyCode rightKey = KeyCode.D;
     public KeyCode jumpKey = KeyCode.W;
 
-    public bool isGrounded;
+   // public bool isGrounded;
     public Rigidbody2D tetheredPlayer;
     public float tetherDistance;
 
@@ -52,7 +52,7 @@ public class Player1Movement : MonoBehaviour
         }
 
         // Allow jumping only if grounded
-        if (Input.GetKeyDown(jumpKey) && isGrounded)
+        if (Input.GetKeyDown(jumpKey) && GroundCheck.IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
@@ -81,7 +81,7 @@ public class Player1Movement : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Player") || IsGroundedLayer(collision.gameObject.layer))
         {
@@ -100,5 +100,5 @@ public class Player1Movement : MonoBehaviour
     private bool IsGroundedLayer(int layer)
     {
         return (groundLayer & (1 << layer)) != 0;
-    }
+    }*/
 }
