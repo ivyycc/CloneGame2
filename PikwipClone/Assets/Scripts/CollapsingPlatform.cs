@@ -41,7 +41,7 @@ public class CollapsingPlatform : MonoBehaviour
         Restart = true;
         if (CF.Fallen == true)
         {
-            ResetPlatform();
+           // ResetPlatform();
         }
 
     }
