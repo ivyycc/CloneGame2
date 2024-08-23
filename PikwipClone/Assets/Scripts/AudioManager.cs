@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FMOD.Studio;
 using FMODUnity;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class AudioManager : MonoBehaviour
 
 
     private EventInstance musicEventInstance;
+    private EventInstance musicEventInstance2;
     private EventInstance WindEventInstance;
     private EventInstance CrumbleEventInstance;
     public static AudioManager instance { get; private set; }
@@ -28,31 +30,42 @@ public class AudioManager : MonoBehaviour
 
     public void Awake()
     {
-       /* if (instance != null && instance != this)
-        {
-            Debug.LogError("Found more than one Audio Manager in the scene");
-            Destroy(gameObject);
-            return;
-        }*/
         if (instance != null)
         {
             Debug.LogError("Found more than one Audio Manager in the scene");
-        }
-
-        
-        instance = this;
-       // DontDestroyOnLoad(gameObject);
-
-       /* if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
             Destroy(gameObject);
             return;
-        }*/
+        }
+
+        instance = this;
+       
+
+        /* if (instance != null && instance != this)
+         {
+             Debug.LogError("Found more than one Audio Manager in the scene");
+             Destroy(gameObject);
+             return;
+         }*/
+
+        //if (instance != null)
+        //{
+        //  Debug.LogError("Found more than one Audio Manager in the scene");
+        //}
+
+
+        //instance = this;
+        // DontDestroyOnLoad(gameObject);
+
+        /* if (instance == null)
+         {
+             instance = this;
+             DontDestroyOnLoad(gameObject);
+         }
+         else
+         {
+             Destroy(gameObject);
+             return;
+         }*/
 
         eventInst = new List<EventInstance>();
 
@@ -67,8 +80,14 @@ public class AudioManager : MonoBehaviour
 
     public void Start()
     {
-        InitializeMusic(FMODEvents.instance.Music);
-        InitializeWind(FMODEvents.instance.Snowstorm);
+        Scene currentScene = SceneManager.GetActiveScene();
+        if (currentScene.buildIndex ==2)
+        {
+            
+            InitializeMusic(FMODEvents.instance.Music);
+            InitializeWind(FMODEvents.instance.Snowstorm);
+        }
+        
 
     }
 
@@ -100,6 +119,13 @@ public class AudioManager : MonoBehaviour
         FMOD.Studio.EventInstance musicEventInstance = RuntimeManager.CreateInstance(musicEventReference);
         //musicEventInstance = CreateEventInstance(musicEventReference);event:/Music/BackgroundMusic
         musicEventInstance.start();
+        Debug.Log("MUSIC STARTED");
+    }
+    public void InitializeMusic2(EventReference musicEventReference2)
+    {
+        musicEventInstance2 = RuntimeManager.CreateInstance(musicEventReference2);
+        //musicEventInstance = CreateEventInstance(musicEventReference);event:/Music/BackgroundMusic
+        musicEventInstance2.start();
         Debug.Log("MUSIC STARTED");
     }
 
@@ -142,7 +168,7 @@ public class AudioManager : MonoBehaviour
         CrumbleEventInstance.setParameterByName(name, val);
         Debug.Log($"SetWindParam called with {name}: {val}");
     }
-
+   
     public void CleanUp()
     {
         //stop and release any created instances
@@ -160,17 +186,28 @@ public class AudioManager : MonoBehaviour
     {
         CleanUp();
     }
+    private void OnEnable()
+    {
+        SceneManager.sceneUnloaded += OnSceneUnloaded;
+    }
 
-    /*public void SetMusicArea(MusicArea area)
+    private void OnDisable()
     {
-        musicEventInstance.setParameterByName("area", (float)area);
-    }*/
-    /*public StudioEventEmitter InitializeEventEmitter(EventReference eventReference, GameObject emitterGameObject)
+        SceneManager.sceneUnloaded -= OnSceneUnloaded;
+    }
+
+    private void OnSceneUnloaded(Scene scene)
     {
-        StudioEventEmitter emitter = emitterGameObject.GetComponent<StudioEventEmitter>();
-        emitter.EventReference = eventReference;
-        eventEmitters.Add(emitter);
-        return emitter;
+        CleanUp();
+    }
+
+    /*public void StopMusic2()
+    {
+        if (musicEventInstance2.isValid())
+        {
+            musicEventInstance2.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            musicEventInstance2.release();
+        }
     }*/
 
 
