@@ -150,6 +150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallArea (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8587657362064275177, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8587657362064275178, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
       propertyPath: m_RootOrder
       value: 111
@@ -160,7 +164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8587657362064275178, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 87.5
+      value: 82.3
       objectReference: {fileID: 0}
     - target: {fileID: 8587657362064275178, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
       propertyPath: m_LocalPosition.z
@@ -378,7 +382,7 @@ GameObject:
   - component: {fileID: 75102910}
   - component: {fileID: 75102912}
   - component: {fileID: 75102911}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CheckFall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,7 +452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 78047534}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -607,7 +611,7 @@ GameObject:
   - component: {fileID: 87276173}
   - component: {fileID: 87276175}
   - component: {fileID: 87276174}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TriggerOut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4824,7 +4828,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: collapseDelay
-      value: 3.5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249242, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: m_RootOrder
@@ -5128,7 +5132,7 @@ GameObject:
   - component: {fileID: 965642628}
   - component: {fileID: 965642630}
   - component: {fileID: 965642629}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CheckFall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5215,6 +5219,10 @@ PrefabInstance:
     - target: {fileID: 8587657362064275177, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
       propertyPath: m_Name
       value: FallArea (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8587657362064275177, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8587657362064275178, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
       propertyPath: m_RootOrder
@@ -6134,7 +6142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: collapseDelay
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249242, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: m_RootOrder
@@ -7012,7 +7020,7 @@ GameObject:
   - component: {fileID: 1158195413}
   - component: {fileID: 1158195415}
   - component: {fileID: 1158195414}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CheckFall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7163,7 +7171,7 @@ GameObject:
   - component: {fileID: 1196424057}
   - component: {fileID: 1196424059}
   - component: {fileID: 1196424058}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TriggerIn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7301,6 +7309,10 @@ PrefabInstance:
     - target: {fileID: 1481392652315652146, guid: 2df89cdbdebb3d24fb43dcb37890a6de, type: 3}
       propertyPath: m_Name
       value: WindArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481392652315652146, guid: 2df89cdbdebb3d24fb43dcb37890a6de, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1481392652315652147, guid: 2df89cdbdebb3d24fb43dcb37890a6de, type: 3}
       propertyPath: paramVal
@@ -7838,7 +7850,7 @@ GameObject:
   - component: {fileID: 1309139713}
   - component: {fileID: 1309139715}
   - component: {fileID: 1309139714}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TriggerOut (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8517,7 +8529,7 @@ GameObject:
   - component: {fileID: 1404764494}
   - component: {fileID: 1404764496}
   - component: {fileID: 1404764495}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CheckFall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9315,6 +9327,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallArea (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8587657362064275177, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8587657362064275178, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
       propertyPath: m_RootOrder
       value: 113
@@ -9325,7 +9341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8587657362064275178, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 91.2
+      value: 89.7
       objectReference: {fileID: 0}
     - target: {fileID: 8587657362064275178, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10225,7 +10241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: collapseDelay
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249242, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: m_RootOrder
@@ -11717,6 +11733,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallArea
       objectReference: {fileID: 0}
+    - target: {fileID: 8587657362064275177, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8587657362064275178, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -11802,11 +11822,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2096904267444137062, guid: d9c9390cf902fbc46889482bed6c5fdd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -83.22
+      value: -45.81
       objectReference: {fileID: 0}
     - target: {fileID: 2096904267444137062, guid: d9c9390cf902fbc46889482bed6c5fdd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -29.7
+      value: -25.35
       objectReference: {fileID: 0}
     - target: {fileID: 2096904267444137062, guid: d9c9390cf902fbc46889482bed6c5fdd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12315,11 +12335,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 997023950746513395, guid: 0f3231bf3d33dc54e8ae739a923e13f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 77
+      value: -26.53
       objectReference: {fileID: 0}
     - target: {fileID: 997023950746513395, guid: 0f3231bf3d33dc54e8ae739a923e13f1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 27.4
+      value: -6.28
       objectReference: {fileID: 0}
     - target: {fileID: 997023950746513395, guid: 0f3231bf3d33dc54e8ae739a923e13f1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13970,6 +13990,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WindParticleSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 3367222192446507626, guid: b077864d9b51f994dad5cc4dcdff7374, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b077864d9b51f994dad5cc4dcdff7374, type: 3}
 --- !u!114 &2113179855 stripped
@@ -14020,6 +14044,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FallArea (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8587657362064275177, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8587657362064275178, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
       propertyPath: m_RootOrder
       value: 109
@@ -14030,7 +14058,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8587657362064275178, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 86.8
+      value: 82.4
       objectReference: {fileID: 0}
     - target: {fileID: 8587657362064275178, guid: cc6753fc2ad92ca4abbd018e4e45fb54, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14157,7 +14185,7 @@ GameObject:
   - component: {fileID: 2135070014}
   - component: {fileID: 2135070012}
   - component: {fileID: 2135070013}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CheckFall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
