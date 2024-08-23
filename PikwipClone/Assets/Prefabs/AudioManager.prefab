@@ -150,8 +150,15 @@ MonoBehaviour:
     Path: event:/crumblingPlatform
   <Music>k__BackingField:
     Guid:
-      Data1: -966569723
-      Data2: 1219369091
-      Data3: -1700934468
-      Data4: -922817915
-    Path: event:/test2
+      Data1: -220800324
+      Data2: 1150542341
+      Data3: 730777252
+      Data4: -650132338
+    Path: event:/BG_Music
+  <Music2>k__BackingField:
+    Guid:
+      Data1: -1954495844
+      Data2: 1191415840
+      Data3: 2098012300
+      Data4: 1123032011
+    Path: event:/startScene_Music

@@ -21,16 +21,26 @@ public class FMODEvents : MonoBehaviour
 
     [field: Header("Music")]
     [field: SerializeField] public EventReference Music { get; private set; }
-
+    [field: SerializeField] public EventReference Music2 { get; private set; }
     public static FMODEvents instance { get; private set; }
 
     public void Awake()
     {
         if (instance != null)
         {
-            Debug.LogError("Found more than one Audio Manager in the scene");
+            Debug.LogError("Found more than one FMODEevents in the scene");
+            Destroy(gameObject);
+            return;
         }
+
         instance = this;
+        
+
+        //if (instance != null)
+        //{
+        //  Debug.LogError("Found more than one Audio Manager in the scene");
+        //}
+        //instance = this;
 
         /*if (instance != null) //&& instance != this)
         {

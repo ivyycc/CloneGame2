@@ -7,12 +7,13 @@ public class GameManager : MonoBehaviour
 {
     public void MoveToScene(int sceneID)
     {
-       // AudioManager.instance.PlayOneShot(FMODEvents.instance.play, this.transform.position);
+        //AudioManager.instance.StopMusic2();
+        // AudioManager.instance.PlayOneShot(FMODEvents.instance.play, this.transform.position);
         SceneManager.LoadScene(sceneID, LoadSceneMode.Single);
     }
     public void StartGame()
     {
-        //AudioManager.instance.PlayOneShot(FMODEvents.instance.play, this.transform.position);
+        AudioManager.instance.InitializeMusic2(FMODEvents.instance.Music2);
         SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
     public void QuitGame()
@@ -31,8 +32,13 @@ public class GameManager : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         if (currentScene.buildIndex == 1 && Input.GetKeyDown(KeyCode.X))
         {
+
             AudioManager.instance.PlayOneShot(FMODEvents.instance.click, this.transform.position);
             MoveToScene(2);
+        }
+        if (currentScene.buildIndex == 2)
+        {
+            //AudioManager.instance.StopMusic2();
         }
 
     }
