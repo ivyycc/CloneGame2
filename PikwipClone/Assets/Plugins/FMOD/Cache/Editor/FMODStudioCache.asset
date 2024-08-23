@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638600021345932680
+  lastModified: 638600122358887824
   FileSizes:
   - Name: Desktop
-    Value: 411808
+    Value: 413024
   Exists: 1
 --- !u!114 &-8615082283910890223
 MonoBehaviour:
@@ -35,7 +35,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638600021345729029
+  lastModified: 638600127905978352
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -75,11 +75,38 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Test.bank
   Name: Test
   StudioPath: bank:/Test
-  lastModified: 638600021346199191
+  lastModified: 638600106167912258
   FileSizes:
   - Name: Desktop
     Value: 1748448
   Exists: 1
+--- !u!114 &-6924861848114837563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ButtonClick
+  m_EditorClassIdentifier: 
+  Path: event:/ButtonClick
+  Guid:
+    Data1: 602854142
+    Data2: 1244714073
+    Data3: -232598355
+    Data4: -1528853966
+  Banks:
+  - {fileID: -2368149431600056532}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5946530378459101953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,10 +122,10 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638600021345780031
+  lastModified: 638600127906003556
   FileSizes:
   - Name: Desktop
-    Value: 1326
+    Value: 1460
   Exists: 1
 --- !u!114 &-4949649195556354971
 MonoBehaviour:
@@ -127,6 +154,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 138002
+--- !u!114 &-4243997516399994105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GameFinished
+  m_EditorClassIdentifier: 
+  Path: event:/GameFinished
+  Guid:
+    Data1: -1055890274
+    Data2: 1266320774
+    Data3: 1104046012
+    Data4: 1911247447
+  Banks:
+  - {fileID: -2368149431600056532}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2513448854157153523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,10 +223,10 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 638600021346279145
+  lastModified: 638600127907911258
   FileSizes:
   - Name: Desktop
-    Value: 140768
+    Value: 158304
   Exists: 1
 --- !u!114 &-1657493739525881588
 MonoBehaviour:
@@ -209,7 +263,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638600021345830197
+  lastModified: 638600106135381370
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -253,7 +307,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638600021345683850
+  lastModified: 638600106134968300
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -287,12 +341,15 @@ MonoBehaviour:
   - {fileID: -2513448854157153523}
   - {fileID: 7735187242565907268}
   - {fileID: 6417422081545228335}
+  - {fileID: 6203135530874304452}
+  - {fileID: -4243997516399994105}
+  - {fileID: -6924861848114837563}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8615082283910890223}
   StringsBanks:
   - {fileID: -5946530378459101953}
-  cacheTime: 638600021346279145
+  cacheTime: 638600127907911258
   cacheVersion: 131619
 --- !u!114 &1905458102276330395
 MonoBehaviour:
@@ -366,6 +423,33 @@ MonoBehaviour:
     Data2: 1256356947
     Data3: -1510544765
     Data4: -1506888278
+  Banks:
+  - {fileID: -8908766536056549860}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6203135530874304452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/snowRolling
+  m_EditorClassIdentifier: 
+  Path: event:/snowRolling
+  Guid:
+    Data1: 515757393
+    Data2: 1303287323
+    Data3: 88471938
+    Data4: -1333726517
   Banks:
   - {fileID: -8908766536056549860}
   IsStream: 0

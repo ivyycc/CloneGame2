@@ -63,6 +63,9 @@
 		<property name="maxVoices">
 			<value>1</value>
 		</property>
+		<property name="voiceStealing">
+			<value>3</value>
+		</property>
 	</object>
 	<object class="MarkerTrack" id="{1d6544d5-f914-498b-8c46-dd3c0d309abf}" />
 	<object class="Timeline" id="{e8e2d975-79e8-4be9-a861-dceaa758db93}">
@@ -76,6 +79,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{0fd6065c-395a-42d9-8f48-a32a6539cd6e}">
+		<property name="volume">
+			<value>-8.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{636e1b14-2658-48b0-82c7-5d9faa914407}</destination>
 		</relationship>
@@ -113,10 +119,10 @@
 	<object class="MixerBusFader" id="{8b93db68-427d-455f-9478-01c0716d5c85}" />
 	<object class="MultibandEqEffect" id="{79fc4515-bcd8-4366-9f49-f95bd77cd829}">
 		<property name="frequencyA">
-			<value>456.834198</value>
+			<value>216.682251</value>
 		</property>
 		<property name="qualityA">
-			<value>1.06368971</value>
+			<value>2.41379333</value>
 		</property>
 	</object>
 </objects>

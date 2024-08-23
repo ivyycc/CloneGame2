@@ -8,13 +8,13 @@ public class FMODEvents : MonoBehaviour
 
     [field: Header("UI SFX")]
     [field: SerializeField] public EventReference startScene{ get; private set; }
-    [field: SerializeField] public EventReference play { get; private set; }
+    [field: SerializeField] public EventReference click { get; private set; }
     [field: SerializeField] public EventReference quit { get; private set; }
 
     [field: Header("All SFX")]
     [field: SerializeField] public EventReference playerWalk { get; private set; }
     [field: SerializeField] public EventReference playerJump { get; private set; }
-    [field: SerializeField] public EventReference playerFall { get; private set; }
+    [field: SerializeField] public EventReference snowRoll { get; private set; }
     [field: SerializeField] public EventReference Snowstorm { get; private set; }
     [field: SerializeField] public EventReference FallingPlatform { get; private set; }
 

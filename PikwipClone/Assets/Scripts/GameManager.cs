@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     }
     public void QuitGame()
     {
-        //AudioManager.instance.PlayOneShot(FMODEvents.instance.quit, this.transform.position);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.quit, this.transform.position);
         Debug.Log("GAME END");
         Application.Quit();
     }
@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         if (currentScene.buildIndex == 1 && Input.GetKeyDown(KeyCode.X))
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.click, this.transform.position);
             MoveToScene(2);
         }
 

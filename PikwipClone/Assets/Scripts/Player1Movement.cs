@@ -91,7 +91,7 @@ public class Player1Movement : MonoBehaviour
     {
         if (collision.collider.CompareTag("END"))
         {
-            GM.QuitGame();
+            GM.StartGame();
         }
     }
 

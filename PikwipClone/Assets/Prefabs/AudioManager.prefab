@@ -99,20 +99,20 @@ MonoBehaviour:
       Data3: 1489049022
       Data4: 107501432
     Path: event:/startScene
-  <play>k__BackingField:
+  <click>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 602854142
+      Data2: 1244714073
+      Data3: -232598355
+      Data4: -1528853966
+    Path: event:/ButtonClick
   <quit>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1055890274
+      Data2: 1266320774
+      Data3: 1104046012
+      Data4: 1911247447
+    Path: event:/GameFinished
   <playerWalk>k__BackingField:
     Guid:
       Data1: -538895126
@@ -127,13 +127,13 @@ MonoBehaviour:
       Data3: -1510544765
       Data4: -1506888278
     Path: event:/PlayerJump
-  <playerFall>k__BackingField:
+  <snowRoll>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 515757393
+      Data2: 1303287323
+      Data3: 88471938
+      Data4: -1333726517
+    Path: event:/snowRolling
   <Snowstorm>k__BackingField:
     Guid:
       Data1: -1261223301
@@ -143,11 +143,11 @@ MonoBehaviour:
     Path: event:/SnowStorm
   <FallingPlatform>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 610491922
+      Data2: 1117134040
+      Data3: 1895534522
+      Data4: -913708794
+    Path: event:/FallingPlatform
   <Music>k__BackingField:
     Guid:
       Data1: -966569723

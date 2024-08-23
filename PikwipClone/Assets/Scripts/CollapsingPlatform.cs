@@ -36,7 +36,7 @@ public class CollapsingPlatform : MonoBehaviour
         isCollapsing = true; // Prevent multiple triggers
         //animator.SetTrigger("Collapse"); // Trigger the collapse animation
         yield return new WaitForSeconds(collapseDelay);
-        //AudioManager.instance.PlayOneShot(FMODEvents.instance.FallingPlatform, this.transform.position);
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.FallingPlatform, this.transform.position);
         gameObject.SetActive(false); // Disable the platform
         Restart = true;
         if (CF.Fallen == true)
@@ -45,32 +45,7 @@ public class CollapsingPlatform : MonoBehaviour
         }
 
     }
-    /*void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player") && Restart==true) // Check if the player has fallen off the platform
-        {
-            Debug.Log("restarting...");
-            Respawn(collision);
-        }
-    }*/
-
-
-    //void Respawn(Collision2D collision)
-    //{
-    //    if (Restart)
-    //    {
-    //        // Move player to checkpoint
-    //        collision.transform.position = Checkpoint.position;
-
-    //        // Reset platform position and re-enable it
-    //        gameObject.SetActive(true);
-    //        transform.position = initialPosition;
-            
-
-    //        Restart = false;
-    //        isCollapsing = false; // Reset collapsing state
-    //    }
-    //}
+    
 
     public void ResetPlatform()
     {
@@ -85,7 +60,32 @@ public class CollapsingPlatform : MonoBehaviour
 
 
 }
+/*void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player") && Restart==true) // Check if the player has fallen off the platform
+        {
+            Debug.Log("restarting...");
+            Respawn(collision);
+        }
+    }*/
 
+
+//void Respawn(Collision2D collision)
+//{
+//    if (Restart)
+//    {
+//        // Move player to checkpoint
+//        collision.transform.position = Checkpoint.position;
+
+//        // Reset platform position and re-enable it
+//        gameObject.SetActive(true);
+//        transform.position = initialPosition;
+
+
+//        Restart = false;
+//        isCollapsing = false; // Reset collapsing state
+//    }
+//}
 /*
  * FOR ADDING ANIMATION!
  * 

@@ -63,6 +63,9 @@
 		<property name="maxVoices">
 			<value>1</value>
 		</property>
+		<property name="voiceStealing">
+			<value>3</value>
+		</property>
 	</object>
 	<object class="MarkerTrack" id="{5302b981-55d8-4d4b-98cd-ded69ecc58b4}" />
 	<object class="Timeline" id="{79c71e69-7776-483a-a25d-85ba86d0d252}">
@@ -105,7 +108,7 @@
 	<object class="MixerBusPanner" id="{0cce9113-a058-48ef-abb4-b3e7bbdf1b63}" />
 	<object class="SingleSound" id="{bb91ebd5-589e-4916-bd4b-f6fb051892e8}">
 		<property name="volume">
-			<value>-12</value>
+			<value>-17.5</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{7edd2898-3298-4817-8f20-dc014601a709}</destination>
