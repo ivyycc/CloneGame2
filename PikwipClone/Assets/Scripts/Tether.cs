@@ -15,15 +15,24 @@ public class Tether : MonoBehaviour
     public float smoothingFactor = 0.1f;
     private Vector2 player1Velocity;
     private Vector2 player2Velocity;
-
+    public Material tetherMaterial; // Assign this in the inspector
     private void Start()
     {
         // Set up the LineRenderer component
         lineRenderer = gameObject.AddComponent<LineRenderer>();
         lineRenderer.positionCount = 2;
-        lineRenderer.startWidth = 0.1f;
-        lineRenderer.endWidth = 0.1f;
-        lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
+        lineRenderer.startWidth = 1f;
+        lineRenderer.endWidth = 1f;
+
+        if (tetherMaterial != null)
+        {
+            lineRenderer.material = tetherMaterial; // Assign the custom material
+        }
+        else
+        {
+            Debug.LogWarning("Tether material not assigned.");
+            lineRenderer.material = new Material(Shader.Find("Sprites/Default")); // Fallback
+        }
         lineRenderer.startColor = Color.white;
         lineRenderer.endColor = Color.white;
          lineRenderer.sortingOrder = sortingOrder;

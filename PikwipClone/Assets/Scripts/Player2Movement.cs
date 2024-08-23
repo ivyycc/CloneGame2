@@ -108,7 +108,7 @@ public class Player2Movement : MonoBehaviour
     {
         if (collision.collider.CompareTag("END")) 
         {
-            GM.QuitGame();
+            GM.MoveToScene(3);
         }
     }
 

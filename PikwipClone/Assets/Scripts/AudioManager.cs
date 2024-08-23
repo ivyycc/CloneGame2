@@ -89,9 +89,12 @@ public class AudioManager : MonoBehaviour
         {
             
             InitializeMusic(FMODEvents.instance.Music);
+            
+        }
+        if (currentScene.buildIndex == 2)
+        {
             InitializeWind(FMODEvents.instance.Snowstorm);
         }
-        
 
     }
 
