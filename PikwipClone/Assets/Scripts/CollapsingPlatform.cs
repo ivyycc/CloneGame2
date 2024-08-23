@@ -8,12 +8,17 @@ public class CollapsingPlatform : MonoBehaviour
     private bool isCollapsing = false;
     public bool Restart = false;
 
+    private Vector3 initialPosition; // Store the initial position of the platform
+
+
     [SerializeField] private Transform Checkpoint;
     // private Animator animator;
 
-    [SerializeField] private CheckFall CF;
+    [SerializeField] public CheckFall CF;
     void Start()
     {
+        initialPosition = transform.position;
+
         //  animator = GetComponent<Animator>();
     }
 
@@ -36,7 +41,7 @@ public class CollapsingPlatform : MonoBehaviour
         Restart = true;
         if (CF.Fallen == true)
         {
-            Respawn(collision);
+            ResetPlatform();
         }
 
     }
@@ -50,17 +55,33 @@ public class CollapsingPlatform : MonoBehaviour
     }*/
 
 
-    void Respawn(Collision2D collision)
+    //void Respawn(Collision2D collision)
+    //{
+    //    if (Restart)
+    //    {
+    //        // Move player to checkpoint
+    //        collision.transform.position = Checkpoint.position;
+
+    //        // Reset platform position and re-enable it
+    //        gameObject.SetActive(true);
+    //        transform.position = initialPosition;
+            
+
+    //        Restart = false;
+    //        isCollapsing = false; // Reset collapsing state
+    //    }
+    //}
+
+    public void ResetPlatform()
     {
-        if (Restart)
-        {
-            Debug.Log("collapse platform respawn");
-            collision.transform.position = Checkpoint.position;
-            this.gameObject.SetActive(true);
-            Restart = false;
-            isCollapsing = false; // Reset collapsing state
-        }
+        gameObject.SetActive(true); // Re-enable the platform
+
+        transform.position = initialPosition;
+        isCollapsing = false; // Reset collapsing state
+        CF.Fallen = false;
     }
+
+
 
 
 }
