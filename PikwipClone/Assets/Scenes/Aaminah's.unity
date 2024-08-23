@@ -10732,8 +10732,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1205267749468640081}
     - target: {fileID: 3543010310362342223, guid: 3998eb674b39f2f41a9b08a6d51cfdc7, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543010310362342223, guid: 3998eb674b39f2f41a9b08a6d51cfdc7, type: 3}
       propertyPath: m_SortingOrder
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3543010310362342223, guid: 3998eb674b39f2f41a9b08a6d51cfdc7, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3543010310385188874, guid: 3998eb674b39f2f41a9b08a6d51cfdc7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
