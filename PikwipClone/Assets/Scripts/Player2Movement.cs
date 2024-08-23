@@ -25,6 +25,7 @@ public class Player2Movement : MonoBehaviour
     public float tetherDistance;
 
     public GroundCheck GroundCheck; // Change the type to GroundCheck
+    [SerializeField] private GameManager GM;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -97,6 +98,15 @@ public class Player2Movement : MonoBehaviour
             transform.localScale = localScale;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Player")) 
+        {
+            GM.QuitGame();
+        }
+    }
+
 
     //private void OnCollisionEnter2D(Collision2D collision)
     //{

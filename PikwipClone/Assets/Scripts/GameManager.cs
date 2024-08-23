@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public void QuitGame()
     {
         //AudioManager.instance.PlayOneShot(FMODEvents.instance.quit, this.transform.position);
+        Debug.Log("GAME END");
         Application.Quit();
     }
 
