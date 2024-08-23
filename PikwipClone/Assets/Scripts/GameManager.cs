@@ -22,11 +22,28 @@ public class GameManager : MonoBehaviour
         Debug.Log("GAME END");
         Application.Quit();
     }
-
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(2);
+    }
     public void Settings()
     {
       // AudioManager.instance.PlayOneShot(FMODEvents.instance.select, this.transform.position);
     }
+
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.click, this.transform.position);
+    }
+
+    public void UnPause()
+    {
+        Time.timeScale = 1;
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.click, this.transform.position);
+    }
+
     private void Update()
     {
         Scene currentScene = SceneManager.GetActiveScene();
