@@ -319,7 +319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4069309216777238967, guid: e2bd14902c9f9dd43ac6b422a881d60f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 370.82
+      value: 369.85
       objectReference: {fileID: 0}
     - target: {fileID: 4069309216777238967, guid: e2bd14902c9f9dd43ac6b422a881d60f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4923,7 +4923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249242, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.710775
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249242, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: m_LocalScale.y
@@ -4935,7 +4935,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249242, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 370.56073
+      value: 369.91
       objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249242, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8109,7 +8109,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.4465284, y: -12.095003}
+  m_Offset: {x: -1.929265, y: -12.095003}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8120,7 +8120,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18.310549, y: 9.841564}
+  m_Size: {x: 13.845114, y: 9.841564}
   m_EdgeRadius: 0
 --- !u!1001 &1317742463
 PrefabInstance:
@@ -12876,11 +12876,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 997023950746513395, guid: 0f3231bf3d33dc54e8ae739a923e13f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -24.16
+      value: -24.2
       objectReference: {fileID: 0}
     - target: {fileID: 997023950746513395, guid: 0f3231bf3d33dc54e8ae739a923e13f1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.57
+      value: -5.9
       objectReference: {fileID: 0}
     - target: {fileID: 997023950746513395, guid: 0f3231bf3d33dc54e8ae739a923e13f1, type: 3}
       propertyPath: m_LocalPosition.z
