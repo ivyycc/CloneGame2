@@ -15,11 +15,11 @@ public class VolumeSlider : MonoBehaviour
     [Header("Type")]
     [SerializeField] private VolumeType volumeType;
 
-    private Slider volumeSlider;
+    private Scrollbar volumeSlider;
 
     private void Awake()
     {
-        volumeSlider = this.GetComponentInChildren<Slider>();
+        volumeSlider = this.GetComponentInChildren<Scrollbar>();
     }
 
     private void Update()

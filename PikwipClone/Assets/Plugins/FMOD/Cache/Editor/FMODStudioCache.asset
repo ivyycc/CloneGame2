@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638600239041681949
+  lastModified: 638600282538751117
   FileSizes:
   - Name: Desktop
     Value: 414848
@@ -35,10 +35,10 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638600239041495053
+  lastModified: 638600282510441115
   FileSizes:
   - Name: Desktop
-    Value: 1036
+    Value: 1340
   Exists: 1
 --- !u!114 &-8573071054007928255
 MonoBehaviour:
@@ -129,7 +129,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Test.bank
   Name: Test
   StudioPath: bank:/Test
-  lastModified: 638600239041820730
+  lastModified: 638600282558922642
   FileSizes:
   - Name: Desktop
     Value: 1748448
@@ -176,10 +176,10 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638600240570740994
+  lastModified: 638600282510473649
   FileSizes:
   - Name: Desktop
-    Value: 1666
+    Value: 1736
   Exists: 1
 --- !u!114 &-4243997516399994105
 MonoBehaviour:
@@ -247,7 +247,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 638600239041840764
+  lastModified: 638600282561047627
   FileSizes:
   - Name: Desktop
     Value: 158304
@@ -342,7 +342,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638600240570895597
+  lastModified: 638600282532761145
   FileSizes:
   - Name: Desktop
     Value: 1756672
@@ -386,7 +386,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638600239041495053
+  lastModified: 638600282510264979
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -431,7 +431,7 @@ MonoBehaviour:
   - {fileID: -8615082283910890223}
   StringsBanks:
   - {fileID: -5946530378459101953}
-  cacheTime: 638600240570895597
+  cacheTime: 638600282561047627
   cacheVersion: 131619
 --- !u!114 &1905458102276330395
 MonoBehaviour:

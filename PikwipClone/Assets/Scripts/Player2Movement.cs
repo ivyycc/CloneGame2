@@ -26,6 +26,7 @@ public class Player2Movement : MonoBehaviour
 
     public GroundCheck GroundCheck; // Change the type to GroundCheck
     [SerializeField] private GameManager GM;
+    [SerializeField] private GameObject PausePanel;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -34,6 +35,10 @@ public class Player2Movement : MonoBehaviour
     {
         horizontal = 0f;
 
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            PausePanel.SetActive(true);
+        }
         if (Input.GetKey(leftKey))
         {
             AudioManager.instance.PlayOneShot(FMODEvents.instance.playerWalk, this.transform.position);

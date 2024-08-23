@@ -18,8 +18,8 @@ public class AudioManager : MonoBehaviour
 
     private Bus masterBus;
     private Bus musicBus;
-    private Bus sfxBus;
 
+    private Bus sfxBus;
     [SerializeField] public List<EventInstance> eventInst;
 
 
@@ -76,7 +76,7 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.LoadBank("Master");
         RuntimeManager.LoadBank("Master.strings");
         musicBus = RuntimeManager.GetBus("bus:/Music");
- 
+        // ambienceBus = RuntimeManager.GetBus("bus:/Ambience");
         sfxBus = RuntimeManager.GetBus("bus:/SFX");
 
         //InitializeMusic(FMODEvents.instance.Music);
@@ -85,7 +85,7 @@ public class AudioManager : MonoBehaviour
     public void Start()
     {
         Scene currentScene = SceneManager.GetActiveScene();
-        if (currentScene.buildIndex ==2)
+        if (currentScene.buildIndex == 1)
         {
             
             InitializeMusic(FMODEvents.instance.Music);

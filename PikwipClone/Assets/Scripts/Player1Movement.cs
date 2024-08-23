@@ -27,7 +27,7 @@ public class Player1Movement : MonoBehaviour
 
     public GroundCheck GroundCheck; // Change the type to GroundCheck
     [SerializeField] private GameManager GM;
-
+    [SerializeField] private GameObject PausePanel;
 
     private void Start()
     {
@@ -35,6 +35,10 @@ public class Player1Movement : MonoBehaviour
     }
     private void Update()
     {
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            PausePanel.SetActive(true);
+        }
         horizontal = 0f;
 
         if (Input.GetKey(leftKey))

@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     }
     public void StartGame()
     {
-        AudioManager.instance.InitializeMusic2(FMODEvents.instance.Music2);
+        //AudioManager.instance.InitializeMusic2(FMODEvents.instance.Music2);
         SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
     public void QuitGame()
