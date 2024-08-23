@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638600122358887824
+  lastModified: 638600174650631202
   FileSizes:
   - Name: Desktop
-    Value: 413024
+    Value: 414848
   Exists: 1
 --- !u!114 &-8615082283910890223
 MonoBehaviour:
@@ -35,7 +35,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638600127905978352
+  lastModified: 638600167787167899
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -75,7 +75,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Test.bank
   Name: Test
   StudioPath: bank:/Test
-  lastModified: 638600106167912258
+  lastModified: 638600167815220595
   FileSizes:
   - Name: Desktop
     Value: 1748448
@@ -122,10 +122,10 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638600127906003556
+  lastModified: 638600167787198762
   FileSizes:
   - Name: Desktop
-    Value: 1460
+    Value: 1568
   Exists: 1
 --- !u!114 &-4949649195556354971
 MonoBehaviour:
@@ -181,6 +181,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-4113187634557728905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/crumblingPlatform/crumble_intensity
+  m_EditorClassIdentifier: 
+  Name: crumble_intensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 666578488
+    data2: 3833684638
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-2513448854157153523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,11 +247,39 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/UI.bank
   Name: UI
   StudioPath: bank:/UI
-  lastModified: 638600127907911258
+  lastModified: 638600167817866124
   FileSizes:
   - Name: Desktop
     Value: 158304
   Exists: 1
+--- !u!114 &-1673774677229226272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/crumblingPlatform
+  m_EditorClassIdentifier: 
+  Path: event:/crumblingPlatform
+  Guid:
+    Data1: -1743990761
+    Data2: 1091473563
+    Data3: -1694361172
+    Data4: -1607648628
+  Banks:
+  - {fileID: -8908766536056549860}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -4113187634557728905}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 700
 --- !u!114 &-1657493739525881588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +315,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638600106135381370
+  lastModified: 638600167787338879
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -307,7 +359,7 @@ MonoBehaviour:
   Path: ../Fmod_Clone2/Build/Desktop/Ambience.bank
   Name: Ambience
   StudioPath: bank:/Ambience
-  lastModified: 638600106134968300
+  lastModified: 638600167787004723
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -344,12 +396,13 @@ MonoBehaviour:
   - {fileID: 6203135530874304452}
   - {fileID: -4243997516399994105}
   - {fileID: -6924861848114837563}
+  - {fileID: -1673774677229226272}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8615082283910890223}
   StringsBanks:
   - {fileID: -5946530378459101953}
-  cacheTime: 638600127907911258
+  cacheTime: 638600174650631202
   cacheVersion: 131619
 --- !u!114 &1905458102276330395
 MonoBehaviour:

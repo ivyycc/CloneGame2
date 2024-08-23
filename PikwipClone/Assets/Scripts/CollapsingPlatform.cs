@@ -12,20 +12,31 @@ public class CollapsingPlatform : MonoBehaviour
 
 
     [SerializeField] private Transform Checkpoint;
-    // private Animator animator;
+    private Animator animator;
+    public SpriteRenderer spriteRen;
+    public Collider2D coll;
+    public float RespawnTime;
 
-    [SerializeField] public CheckFall CF;
+
+    //[SerializeField] public CheckFall CF;
     void Start()
     {
         initialPosition = transform.position;
 
-        //  animator = GetComponent<Animator>();
+         animator = GetComponent<Animator>();
+    }
+
+    void Components(bool state)
+    {
+        spriteRen.enabled = state;
+        coll.enabled = state;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") && !isCollapsing) // Check if the player stepped on the platform
+        if (collision.gameObject.CompareTag("Player")) // Check if the player stepped on the platform && !isCollapsing
         {
+            AudioManager.instance.InitializeCrumble(FMODEvents.instance.FallingPlatform);
             StartCoroutine(CollapsePlatform(collision));
 
         }
@@ -33,27 +44,34 @@ public class CollapsingPlatform : MonoBehaviour
 
     IEnumerator CollapsePlatform(Collision2D collision)
     {
-        isCollapsing = true; // Prevent multiple triggers
-        //animator.SetTrigger("Collapse"); // Trigger the collapse animation
+        // isCollapsing = true; // Prevent multiple triggers
+        AudioManager.instance.SetWindParam("crumble_intensity", 0);
+        animator.Play("platformBreak"); 
         yield return new WaitForSeconds(collapseDelay);
-        AudioManager.instance.PlayOneShot(FMODEvents.instance.FallingPlatform, this.transform.position);
-        gameObject.SetActive(false); // Disable the platform
-        Restart = true;
+        AudioManager.instance.SetWindParam("crumble_intensity", 1);
+        //AudioManager.instance.PlayOneShot(FMODEvents.instance.FallingPlatform, this.transform.position);
+        Components(false);
+        yield return new WaitForSeconds(RespawnTime);
+        animator.Play("platformIdle");
+        Components(true);
+        // gameObject.SetActive(false); // Disable the platform
+        
+        /*Restart = true;
         if (CF.Fallen == true)
         {
            // ResetPlatform();
-        }
+        }*/
 
     }
     
 
     public void ResetPlatform()
     {
-        gameObject.SetActive(true); // Re-enable the platform
+       // gameObject.SetActive(true); // Re-enable the platform
 
         transform.position = initialPosition;
-        isCollapsing = false; // Reset collapsing state
-        CF.Fallen = false;
+       // isCollapsing = false; // Reset collapsing state
+       // CF.Fallen = false;
     }
 
 

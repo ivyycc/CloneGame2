@@ -4803,13 +4803,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 965642630}
     - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+      propertyPath: coll
+      value: 
+      objectReference: {fileID: 1989085818}
+    - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+      propertyPath: spriteRen
+      value: 
+      objectReference: {fileID: 1989085819}
+    - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: Checkpoint
       value: 
       objectReference: {fileID: 696775619}
+    - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+      propertyPath: RespawnTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: collapseDelay
       value: 3.5
@@ -6101,13 +6113,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2135070012}
     - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+      propertyPath: coll
+      value: 
+      objectReference: {fileID: 2113179857}
+    - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+      propertyPath: spriteRen
+      value: 
+      objectReference: {fileID: 2113179858}
+    - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: Checkpoint
       value: 
       objectReference: {fileID: 696775619}
+    - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+      propertyPath: RespawnTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: collapseDelay
       value: 4
@@ -7305,9 +7329,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1404764496}
     - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+      propertyPath: coll
+      value: 
+      objectReference: {fileID: 1224746272}
+    - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+      propertyPath: spriteRen
+      value: 
+      objectReference: {fileID: 1224746273}
+    - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: Checkpoint
       value: 
       objectReference: {fileID: 1487009410}
+    - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+      propertyPath: RespawnTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249242, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -7385,6 +7421,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df74c7b3d9303cd4ea20bb802075eb9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!60 &1224746272 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5899140162086249238, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+  m_PrefabInstance: {fileID: 1224746269}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1224746273 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5899140162086249239, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+  m_PrefabInstance: {fileID: 1224746269}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1229539551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10158,13 +10204,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1158195415}
     - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+      propertyPath: coll
+      value: 
+      objectReference: {fileID: 1929947860}
+    - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+      propertyPath: spriteRen
+      value: 
+      objectReference: {fileID: 1929947861}
+    - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: Checkpoint
       value: 
       objectReference: {fileID: 696775619}
+    - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+      propertyPath: RespawnTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: collapseDelay
       value: 5
@@ -10918,6 +10976,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df74c7b3d9303cd4ea20bb802075eb9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!60 &1811888772 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5899140162086249238, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+  m_PrefabInstance: {fileID: 1835375087}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1811888773 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5899140162086249239, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+  m_PrefabInstance: {fileID: 1835375087}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1813840314 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 565286395162755813, guid: a05662b0936cd244d98091787cd09187, type: 3}
@@ -10996,9 +11064,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 75102912}
     - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+      propertyPath: coll
+      value: 
+      objectReference: {fileID: 1811888772}
+    - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+      propertyPath: spriteRen
+      value: 
+      objectReference: {fileID: 1811888773}
+    - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: Checkpoint
       value: 
       objectReference: {fileID: 1487009410}
+    - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+      propertyPath: RespawnTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5899140162086249236, guid: df487ebadf5af73469840719f7af63b6, type: 3}
       propertyPath: collapseDelay
       value: 4
@@ -12045,6 +12125,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df74c7b3d9303cd4ea20bb802075eb9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!60 &1929947860 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5899140162086249238, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+  m_PrefabInstance: {fileID: 1697229612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1929947861 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5899140162086249239, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+  m_PrefabInstance: {fileID: 1697229612}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1932772778 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6449204114936528535, guid: dfeb68c9206e1ea4aba19be5422a62d9, type: 3}
@@ -12225,11 +12315,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 997023950746513395, guid: 0f3231bf3d33dc54e8ae739a923e13f1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 195.1
+      value: 77
       objectReference: {fileID: 0}
     - target: {fileID: 997023950746513395, guid: 0f3231bf3d33dc54e8ae739a923e13f1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 72.9
+      value: 27.4
       objectReference: {fileID: 0}
     - target: {fileID: 997023950746513395, guid: 0f3231bf3d33dc54e8ae739a923e13f1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12912,6 +13002,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df74c7b3d9303cd4ea20bb802075eb9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!60 &1989085818 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5899140162086249238, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+  m_PrefabInstance: {fileID: 924141652}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1989085819 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5899140162086249239, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+  m_PrefabInstance: {fileID: 924141652}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1992017362 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8959058156700640072, guid: 1f48ab430631bb84ca893b1aa9675464, type: 3}
@@ -13883,6 +13983,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df74c7b3d9303cd4ea20bb802075eb9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!60 &2113179857 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5899140162086249238, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+  m_PrefabInstance: {fileID: 1060495662}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2113179858 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5899140162086249239, guid: df487ebadf5af73469840719f7af63b6, type: 3}
+  m_PrefabInstance: {fileID: 1060495662}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2115538203
 PrefabInstance:
   m_ObjectHideFlags: 0

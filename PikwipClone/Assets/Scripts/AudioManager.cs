@@ -22,6 +22,7 @@ public class AudioManager : MonoBehaviour
 
     private EventInstance musicEventInstance;
     private EventInstance WindEventInstance;
+    private EventInstance CrumbleEventInstance;
     public static AudioManager instance { get; private set; }
 
 
@@ -111,6 +112,15 @@ public class AudioManager : MonoBehaviour
         Debug.Log("Wind STARTED");
     }
 
+    public void InitializeCrumble(EventReference CrumbEventRef)
+    {
+        CrumbleEventInstance = RuntimeManager.CreateInstance(CrumbEventRef);
+        //FMOD.Studio.EventInstance WindEventInstance = RuntimeManager.CreateInstance(WindEventRef);
+        //musicEventInstance = CreateEventInstance(musicEventReference);event:/Music/BackgroundMusic
+        CrumbleEventInstance.start();
+        Debug.Log("Wind STARTED");
+    }
+
     public void InitializeStartMusic(EventReference startMusicRef)
     {
         //WindEventInstance = RuntimeManager.CreateInstance(WindEventRef);
@@ -124,6 +134,12 @@ public class AudioManager : MonoBehaviour
     public void SetWindParam(string name, float val)
     {
         WindEventInstance.setParameterByName(name, val);
+        Debug.Log($"SetWindParam called with {name}: {val}");
+    }
+
+    public void SetCrumbleParam(string name, float val)
+    {
+        CrumbleEventInstance.setParameterByName(name, val);
         Debug.Log($"SetWindParam called with {name}: {val}");
     }
 

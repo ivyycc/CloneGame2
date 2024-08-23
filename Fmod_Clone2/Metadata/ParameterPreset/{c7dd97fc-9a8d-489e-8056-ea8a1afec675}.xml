@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{c7dd97fc-9a8d-489e-8056-ea8a1afec675}">
+		<property name="name">
+			<value>crumble_intensity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ce6b7677-991d-428d-ba75-61fa5554a3c3}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{056a6979-c1ff-41dd-aa67-125d9021369f}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{056a6979-c1ff-41dd-aa67-125d9021369f}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

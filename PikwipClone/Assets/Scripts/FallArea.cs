@@ -15,7 +15,7 @@ public class FallArea : MonoBehaviour
             collision.transform.position = Checkpoint.lastCheckpointPos;
 
             // Find all collapsing platforms in the scene and reset them
-            platform.ResetPlatform();
+            //platform.ResetPlatform();
         }
     }
 }

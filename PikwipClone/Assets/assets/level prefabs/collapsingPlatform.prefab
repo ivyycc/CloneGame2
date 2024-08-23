@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5899140162086249239}
   - component: {fileID: 5899140162086249236}
   - component: {fileID: 5899140162086249238}
+  - component: {fileID: 1700167834040185385}
   m_Layer: 6
   m_Name: collapsingPlatform
   m_TagString: Ground
@@ -100,8 +101,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collapseDelay: 2
   Restart: 0
-  Checkpoint: {fileID: 0}
-  CF: {fileID: 0}
+  spriteRen: {fileID: 0}
+  coll: {fileID: 0}
+  RespawnTime: 0
 --- !u!60 &5899140162086249238
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -191,3 +193,23 @@ PolygonCollider2D:
       - {x: 1.3369131, y: -3.0797653}
       - {x: 1.6276313, y: -3.055539}
       - {x: 2.1848414, y: -2.8132737}
+--- !u!95 &1700167834040185385
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5899140162086249243}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 11143715088c5c54e9c6a6d06110062f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
