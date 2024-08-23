@@ -3505,6 +3505,10 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  groundCheckPoints:
+  - {fileID: 490560723}
+  checkRadius: 1
+  groundCheckDelay: 0.1
   isGrounded: 0
 --- !u!61 &490560722
 BoxCollider2D:
@@ -3532,6 +3536,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8999944, y: 3.221403}
   m_EdgeRadius: 0
+--- !u!4 &490560723 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 997023950254638996, guid: 0f3231bf3d33dc54e8ae739a923e13f1, type: 3}
+  m_PrefabInstance: {fileID: 1953012686}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &526069770 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2792276067929773538, guid: 27b86937b7ef2064fa8d2d4bf5e89a45, type: 3}
@@ -9607,6 +9616,10 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  groundCheckPoints:
+  - {fileID: 1536798217}
+  checkRadius: 1
+  groundCheckDelay: 0.1
   isGrounded: 0
 --- !u!61 &1536798214
 BoxCollider2D:
@@ -9634,6 +9647,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9057738, y: 4.1348734}
   m_EdgeRadius: 0
+--- !u!4 &1536798217 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 997023951891950845, guid: 0f3231bf3d33dc54e8ae739a923e13f1, type: 3}
+  m_PrefabInstance: {fileID: 1953012686}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1543823906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 565286395162755813, guid: a05662b0936cd244d98091787cd09187, type: 3}
@@ -12243,7 +12261,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 997023950254638995, guid: 0f3231bf3d33dc54e8ae739a923e13f1, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 997023950254638996, guid: 0f3231bf3d33dc54e8ae739a923e13f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12431,7 +12449,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 997023951891950844, guid: 0f3231bf3d33dc54e8ae739a923e13f1, type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2662578647313639192, guid: 0f3231bf3d33dc54e8ae739a923e13f1, type: 3}
       propertyPath: m_LocalPosition.x
