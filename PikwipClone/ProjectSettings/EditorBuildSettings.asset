@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Aaminah's.unity
     guid: 12e845dff7008d24285adc8c372f918a
+  - enabled: 0
+    path: Assets/Scenes/CameronScene.unity
+    guid: 319848cae0a12ee4a99f12ffb463e587
   m_configObjects: {}
